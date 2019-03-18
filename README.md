@@ -1,13 +1,14 @@
 # PUBG-Finish-Placement-Prediction
-From Kaggle
-This project is about the prediction of final placement of players in the PC game called PUBG.        
-The raw data origin:
-https://www.kaggle.com/c/pubg-finish-placement-prediction/data
+From Kaggle.          
+This project is about the prediction of final placement of players in the PC game called PUBG.             
 ### Data folder:
+The raw data origin:      
+https://www.kaggle.com/c/pubg-finish-placement-prediction/data
 #### solo_data_final.csv
-This is the data which I have already fixed.
+This is the data of solo mode which I have already fixed.
 
-720206 observations with 21 variables:    
+720206 observations with 21 variables(modified):    
+
 assists - Number of enemy players this player damaged that were killed by teammates.    
 boosts - Number of boost items used.    
 damageDealt - Total damage dealt. Note: Self inflicted damage is subtracted.    
@@ -30,6 +31,18 @@ winPoints - Win-based external ranking of player. (Think of this as an Elo ranki
 maxPlace - Worst placement we have data for in the match. This may not match with numGroups, as sometimes the data skips over placements.       
 winPlacePerc - The target of prediction. This is a percentile winning placement, where 1 corresponds to 1st place, and 0 corresponds to last place in the match. It is calculated off of maxPlace, not numGroups, so it is possible to have missing chunks in a match.        
 ### Code folder:
- 
+Data Cleaning: EDA(finding cheaters), HeatMap       
+Model Selection: KNN,RF,GBDT,Xgboost and LightGBM      
+Models Explanatory: Feature_Importance_Permutation     
 ### Prediction folder:
+#### final_prediction.csv
+
+This is a final prediction of testing data based on the models I trainned.     
+The final Public Score from Kaggle is 0.05039.
+
+1934174 observations with 2 variables(modified):    
+
+Id - Player’s Id    
+winPlacePerc(predicted) - The target of prediction. This is a percentile winning placement, where 1 corresponds to 1st place, and 0 corresponds to last place in the match. It is calculated off of maxPlace, not numGroups, so it is possible to have missing chunks in a match.
+
 
