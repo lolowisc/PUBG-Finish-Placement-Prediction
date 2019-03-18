@@ -1,9 +1,9 @@
 # PUBG-Finish-Placement-Prediction
 From Kaggle.          
 This project is about the prediction of final placement of players in the PC game called PUBG.             
+### Data folder:
 The raw data origin:      
 https://www.kaggle.com/c/pubg-finish-placement-prediction/data
-### Data folder:
 #### solo_data_final.csv
 This is the data of solo mode which I have already fixed.
 
