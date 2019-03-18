@@ -29,13 +29,7 @@ weaponsAcquired - Number of weapons picked up.
 winPoints - Win-based external ranking of player. (Think of this as an Elo ranking where only winning matters.) If there is a value other than -1 in rankPoints, then any 0 in winPoints should be treated as a “None”.     
 maxPlace - Worst placement we have data for in the match. This may not match with numGroups, as sometimes the data skips over placements.       
 winPlacePerc - The target of prediction. This is a percentile winning placement, where 1 corresponds to 1st place, and 0 corresponds to last place in the match. It is calculated off of maxPlace, not numGroups, so it is possible to have missing chunks in a match.        
-#### bodyfat_clean.csv
-245 observations with 14 variables.
-#### comparison.csv
-Comparison results between 10 models.
 ### Code folder:
-Data cleaning: Cook's distance    
-Variable selection: AIC, BIC, Mallow's Cp, Lasso, etc.    
-Produce figures and tables    
-### Image folder:
-Any figures/images/tables produced in our analysis.
+ 
+### Prediction folder:
+
