@@ -43,6 +43,6 @@ The final Public Score from Kaggle is 0.05039.
 1934174 observations with 2 variables(modified):    
 
 Id - Player’s Id    
-winPlacePerc - The target of prediction. This is a percentile winning placement, where 1 corresponds to 1st place, and 0 corresponds to last place in the match. It is calculated off of maxPlace, not numGroups, so it is possible to have missing chunks in a match.(predicted)
+winPlacePerc(predicted) - The target of prediction. This is a percentile winning placement, where 1 corresponds to 1st place, and 0 corresponds to last place in the match. It is calculated off of maxPlace, not numGroups, so it is possible to have missing chunks in a match.
 
 
